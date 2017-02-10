@@ -101,12 +101,14 @@ Here are some images from the pipeline:
 ![fig](./output_images/fig7_after_threshold_heatmap_marked.png) fig7_after_threshold_heatmap_marked.png
 
 The pictures are selected so there are visible examples of each class: True Positive, True Negative as well as False Positive and False Negative.
+
 ---
 
 ### Video Implementation
 
 ####1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
 Here's a [link to my test video result](./test_video_out.mp4)
+
 Here's a [link to my video result](./project_video_out2.mp4)
 
 
@@ -137,10 +139,10 @@ labels = label(heatmap)
 ####1. Briefly, discuss any problems/issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 I think this was very exciting, challenging, and interesting project. Some of the places for improvements in the model are:
-1. Very slow processing. The pipeline should be optimized for speed, as the the 50s. video takes more than 3 hours to process.
-2. Hyper and meta parameter optimization - the classifier, the threshold for boxes, the windows sizes, and all the other meta and hyperparameters in the pipeline.
-3. A different classifier for the different sizes of patches instead of resizing the patch could improve the classification process.
-4. More features. I used only HOG features from 8 different color transforms. Many other options could be investigated.
-5. Kalman filter and working with previous frames and predicting future position would be another interesting advancement of the project.
-6. Better visualization of the found objects may improve the feeling of the algorithm.
-6. Finally, but not least I would like to investigate some deep learning algorithm pipelines.
+* Very slow processing. The pipeline should be optimized for speed, as the the 50s. video takes more than 3 hours to process.
+* Hyper and meta parameter optimization - the classifier, the threshold for boxes, the windows sizes, and all the other meta and hyperparameters in the pipeline.
+* A different classifier for the different sizes of patches instead of resizing the patch could improve the classification process.
+* More features. I used only HOG features from 8 different color transforms. Many other options could be investigated.
+* Kalman filter and working with previous frames and predicting future position would be another interesting advancement of the project.
+* Better visualization of the found objects may improve the feeling of the algorithm.
+* Finally, but not least I would like to investigate some deep learning algorithm pipelines.
